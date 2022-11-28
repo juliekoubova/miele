@@ -201,27 +201,31 @@ DISHWASHER_PROGRAM_ID = {
     -1: "no_program",  # Sometimes returned by the API when the machine is switched off entirely, in conjunection with program phase 65535.
     0: "no_program",  # Returned by the API when the machine is switched off entirely.
     1: "intensive",
-    2: "maintenance",
+    2: "maintenance", # G7910: Clean Machine
     3: "eco",
     6: "automatic",
+    7: "sensor_wash", 
     9: "solar_save",
-    10: "gentle",
+    10: "gentle",  # G7910: China & Crystal
     11: "extra_quiet",
-    12: "hygiene",
+    12: "hygiene", # G7910: SaniWash
     13: "quick_power_wash",
-    26: "intensive",
+    14: "starch_and_cheese",
+    17: "tall_items",
+    19: "glasses_no_rinse_aid",
+    26: "intensive", # G7910: Pots & Pans
     27: "maintenance",  # or maintenance_program?
     28: "eco",
     30: "normal",
     31: "automatic",
     32: "automatic",  # sources disagree on ID
-    34: "solar_save",
+    34: "solar_save", # G7910: Energy Saver
     35: "gentle",
     36: "extra_quiet",
     37: "hygiene",
     38: "quick_power_wash",
     42: "tall_items",
-    44: "glasses_warm",
+    44: "glasses_warm", # G7910: PowerWash
 }
 TUMBLE_DRYER_PROGRAM_ID = {
     -1: "no_program",  # Extrapolated from other device types.
