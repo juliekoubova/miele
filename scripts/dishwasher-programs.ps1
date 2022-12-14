@@ -22,4 +22,4 @@ $Mapping = $ProgramTranslations.GetProperty('TranslationData', [BindingFlags]'No
 }
 
 $ProgramID_ShortName | ConvertTo-Json > dishwasher_programs.json
-$ShortName_Translation | ConvertTo-Json > "dishwasher_programs_$($Culture.Name).json"
+$ShortName_Translation | ConvertTo-Json
